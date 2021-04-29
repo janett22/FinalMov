@@ -1,4 +1,4 @@
-package ui;
+package com.example.plantilla.ui;
 
 import android.os.Bundle;
 import android.view.Menu;

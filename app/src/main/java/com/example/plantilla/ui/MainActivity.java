@@ -1,4 +1,4 @@
-package com.example.plantilla;
+package com.example.plantilla.ui;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         vm.getResultadoMutable().observe(this, new Observer<String>() {
             @Override
             public void onChanged(String mensaje) {
-                new AlertDialog.Builder(getApplicationContext())
+                new AlertDialog.Builder(MainActivity.this)
                         .setTitle("Advertencia!")
                         .setMessage(mensaje)
                         .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         vm.getOkMutable().observe(this, new Observer<Boolean>() {
             @Override
             public void onChanged(Boolean aBoolean) {
-                Intent intent = new Intent(getApplicationContext(),MenuNavegation.class);
+                Intent intent = new Intent(getApplicationContext(), MenuMainActivity.class);
                 startActivity(intent);
             }
         });

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="ui.MainActivityViewModel$MenuMainActivity"
+            android:name=".ui.MainActivityViewModel$MenuMainActivity"
             android:label="@string/title_activity_menu_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name="ui.MainActivity">
