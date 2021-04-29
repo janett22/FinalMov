@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         vm.getResultadoMutable().observe(this, new Observer<String>() {
             @Override
             public void onChanged(String mensaje) {
-                new AlertDialog.Builder(getApplicationContext())
+                new AlertDialog.Builder(MainActivity.this) //Cambio modal
                         .setTitle("Advertencia!")
                         .setMessage(mensaje)
                         .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
