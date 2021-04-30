@@ -7,14 +7,23 @@
         <item
             android:id="@+id/nav_inicio"
             android:icon="@drawable/ic_menu_camera"
-            android:title="inicio" />
+            android:title="Inicio" />
         <item
             android:id="@+id/nav_perfil"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="perfil" />
+            android:title="Perfil" />
         <item
             android:id="@+id/nav_inmuebles"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="inmuebles" />
+            android:title="Inmuebles" />
+        <item
+            android:id="@+id/nav_inquilinos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Inquilinos" />
+        <item
+            android:id="@+id/nav_contratos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Contratos Vigentes" />
+
     </group>
 </menu>

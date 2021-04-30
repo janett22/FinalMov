@@ -7,19 +7,29 @@
 
     <fragment
         android:id="@+id/nav_inicio"
-        android:name="com.example.plantilla.ui.home.HomeFragment"
+        android:name="com.example.plantilla.ui.Ubicacion.UbicacionFragment"
         android:label="inicio"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_ubicacion" />
 
     <fragment
         android:id="@+id/nav_perfil"
-        android:name="com.example.plantilla.ui.gallery.GalleryFragment"
+        android:name="com.example.plantilla.ui.Perfil.PerfilFragment"
         android:label="perfil"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_perfil" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.plantilla.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_inmuebles"
+        android:name="com.example.plantilla.ui.Inmuebles.InmueblesFragment"
         android:label="inmuebles"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_inmuebles" />
+    <fragment
+        android:id="@+id/nav_inquilinos"
+        android:name="com.example.plantilla.ui.Inquilinos.Inquilinos"
+        android:label="fragment_inquilinos"
+        tools:layout="@layout/fragment_inquilinos" />
+    <fragment
+        android:id="@+id/nav_contratos"
+        android:name="com.example.plantilla.ui.contratos.nav_contratos"
+        android:label="fragment_nav_contratos"
+        tools:layout="@layout/fragment_contratos" />
 </navigation>
