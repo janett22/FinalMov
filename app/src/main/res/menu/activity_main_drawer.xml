@@ -24,6 +24,10 @@
             android:id="@+id/nav_contratos"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Contratos Vigentes" />
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Cerrar Sesion" />
 
     </group>
 </menu>
