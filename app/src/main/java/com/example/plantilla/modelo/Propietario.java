@@ -12,7 +12,7 @@ public class Propietario {
     private String contraseña;
     private String telefono;
 
-    public Propietario(){}
+    public Propietario(Integer id, String s, String nombre, String apellido, String email, String contraseña, String telefono){}
     public Propietario(int id, Long dni, String nombre, String apellido, String email, String contraseña, String telefono) {
         this.id = id;
         this.dni = dni;
@@ -31,8 +31,7 @@ public class Propietario {
         this.id = id;
     }
 
-    public Long getDni() {
-        return dni;
+    public long getDni() { return dni;
     }
 
     public void setDni(Long dni) {

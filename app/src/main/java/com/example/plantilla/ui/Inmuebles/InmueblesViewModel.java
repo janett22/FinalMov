@@ -4,16 +4,24 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.plantilla.modelo.Inmueble;
+import com.example.plantilla.request.ApiClient;
+
+import java.util.List;
+
 public class InmueblesViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    private MutableLiveData<List<Inmueble>> listaMutable;
 
-    public InmueblesViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+    public LiveData<List<Inmueble>> getlistaMutable(){
+        if(listaMutable==null){
+            listaMutable= new MutableLiveData<>();
+        }
+        return listaMutable;
     }
-
-    public LiveData<String> getText() {
-        return mText;
+    public void leerInmuebles(){
+        ApiClient api = ApiClient.getApi();
+        List<Inmueble>lista=api.obtnerPropiedades();
+        listaMutable.setValue(lista);
     }
 }

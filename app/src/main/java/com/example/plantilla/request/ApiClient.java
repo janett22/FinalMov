@@ -14,7 +14,7 @@ public class ApiClient {
     private static Propietario usuarioActual=null;
     private static ApiClient api=null;
 
-    private ApiClient(){
+    public ApiClient(){
         //Nos conectamos a nuestra "Base de Datos"
         cargaDatos();
     }
@@ -111,6 +111,7 @@ public Propietario login(String mail, final String password){
 public void actualizarPerfil(Propietario propietario){
     usuarioActual.setId(propietario.getId());
     usuarioActual.setDni(propietario.getDni());
+    usuarioActual.setNombre(propietario.getNombre());
     usuarioActual.setApellido(propietario.getApellido());
     usuarioActual.setEmail(propietario.getEmail());
     usuarioActual.setContraseña(propietario.getContraseña());

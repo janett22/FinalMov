@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_perfil"
         android:name="com.example.plantilla.ui.Perfil.PerfilFragment"
-        android:label="perfil"
+        android:label="Perfil"
         tools:layout="@layout/fragment_perfil" />
 
     <fragment
@@ -30,11 +30,11 @@
     <fragment
         android:id="@+id/nav_contratos"
         android:name="com.example.plantilla.ui.contratos.ContratosFragment"
-        android:label="contratos"
+        android:label="Contratos"
         tools:layout="@layout/fragment_contratos" />
     <fragment
         android:id="@+id/nav_cerrarSesion"
         android:name="com.example.plantilla.ui.CerrarSesion.CerrarSesionFragment"
-        android:label="fragment_cerrar_sesion"
+        android:label="Cerrar secion"
         tools:layout="@layout/fragment_cerrar_sesion" />
 </navigation>

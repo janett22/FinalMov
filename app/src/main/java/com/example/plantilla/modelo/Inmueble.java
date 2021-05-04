@@ -94,12 +94,12 @@ public class Inmueble implements Serializable {
         this.estado = estado;
     }
 
-    public String getImagen() {
-        return imagen;
-    }
-
     public void setImagen(String imagen) {
         this.imagen = imagen;
+    }
+
+    public String getImagen() {
+        return imagen;
     }
 
     @Override

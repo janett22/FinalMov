@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="7"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:background="@drawable/fondo">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -71,6 +72,7 @@
                     android:ems="10"
                     android:hint="Usuario"
                     android:inputType="textPersonName"
+                    android:text="juan@mail.com"
                     android:padding="15dp"/>
 
                 <EditText
@@ -80,7 +82,8 @@
                     android:background="@drawable/border_bottom"
                     android:ems="10"
                     android:hint="Contraseña"
-                    android:inputType="textPersonName"
+                    android:inputType="textPassword"
+                    android:text="123"
                     android:padding="15dp"/>
 
                 <Button
@@ -88,7 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:background="@android:color/darker_gray"
+                    android:background="@drawable/esquinas_redomdeadas"
                     android:text="Iniciar sesión "
                     android:textColorHighlight="@android:color/background_light"
                     app:layout_constraintStart_toStartOf="parent"
